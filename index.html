@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction search
+    </title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="flexContainer">
+            <div class="profilePic"></div>
+            <div class="Other"></div>
+        </div>
+        <div class="Other2"></div>
+    </div>
+    <div class="lowerContainer">
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">Transactions</a></li>
+                <li class="notImplemented" ><a href="#">Settings</a></li>
+                <li class="notImplemented"><a href="#">User management</a></li>
+                <li class="notImplemented"><a href="#">ATM management</a></li>
+                <li class="notImplemented"><a href="#">My account</a></li>
+            </ul>
+        </nav>
+        <div class="mainArea">
+            <h3>All Transactions</h3>
+            <div class="printExport">            
+                <button class="btn">Print</button>
+                <button class="btn">Export</button>
+            </div>
+            <div class="Date">
+                <h5>DATE</h5>
+                <input class="date" type="date">
+            </div>
+            <div class="ATM_ID">
+                <h5>ATM_ID</h5>
+                <form class="dropDown">
+                    <select class="atmId">
+                      <option value="All ATMs">All ATMs</option>
+                    </select>
+                </form>
+            </div>
+            <div class="panNumber">
+                <h5>CUSTOMER PAN NUMBER</h5>
+                <div class="search-container">
+                    <form>
+                      <input type="text" placeholder="Partial or full card number" name="search">
+                    </form>
+                </div>
+            </div>
+            <div class="applications">
+                <h5>EMV CHIP AID</h5>
+                <form class="dropDown">
+                    <select>
+                      <option value="All ATMs">All applications</option>
+                    </select>
+                </form>
+            </div>
+            <div class="serialNumber">
+                <h5>TRANSACTION SERIAL NUMBER</h5>
+                <div class="search-container">
+                    <form class="form">
+                      <input type="text" placeholder="4 digit number" name="search">
+                    </form>
+                </div>
+            </div>
+            <table id="myTable">
+                <tr>
+                  <th>Date</th>
+                  <th>ATM ID</th>
+                  <th>Customer PAN</th>
+                  <th>Description</th>
+                  <th>Code</th>
+                  <th>
+                    <form class="searchFrom">
+                        <input type="text" placeholder="Search in results" name="search">
+                    </form>
+                  </th>
+                </tr>
+              </table>
+        </div>
+    </div>
+    <script src="index.js" charset="UTF-8"></script>
+</body>
+</html>

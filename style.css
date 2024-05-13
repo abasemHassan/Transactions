@@ -1,0 +1,157 @@
+body{
+    background-color: #f1f1f1;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 30px;   
+}
+
+.profilePic, .Other, .Other2{
+    background-color: gray;
+}
+
+.flexContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.profilePic{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(187, 186, 186);
+    border-radius: 10px;
+}
+
+.Other{
+    height: 15px;
+    width: 100px;
+    background-color:rgb(187, 186, 186);
+    border-radius: 10px;
+    align-self: center;
+}
+.Other2{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(187, 186, 186);
+    border-radius: 15px;
+    justify-self: end;
+}
+.lowerContainer{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+ul {
+    list-style: none;
+    padding-top: 30px;
+    width: 200px;
+ }
+
+ li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    padding-bottom: 20px;
+    text-decoration: none;
+  }
+
+ li a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  .mainArea{
+    display: grid;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 100vh;
+  }
+
+  h3{
+    width: 150px;
+  }
+  .btn{
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    justify-self: end;
+    background-color: white;
+    margin-top: 15px;
+    margin-right: 5px;
+  }
+.printExport {
+    grid-column: 5/6;
+}
+h5{
+    margin: 0;
+    margin-top: 25px;
+}
+
+.search-container input,.date{
+    padding: 6px;
+    font-size: 13.28px;
+    width: 200px;
+    height: 15px;
+    border: 1px solid #caced1;
+}
+  
+select {
+    width: 200px;
+    font-size: 13.28px;
+    padding: 6px;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .dropDown::before,
+  .dropDown::after {
+    --size: 0.3rem;
+    content: "";
+    position: absolute;
+    right: 1rem;
+    pointer-events: none;
+  }
+  
+  .dropDown::before {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-bottom: var(--size) solid black;
+    top: 40%;
+  }
+  
+  .dropDown::after {
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+    border-top: var(--size) solid black;
+    top: 55%;
+  }
+
+  table{
+    grid-column-end: span 5;
+    align-self: end;
+    border-collapse:collapse;
+
+  }
+  th,td{
+    padding: 6px;
+    font-size: 13.28px;
+    width: 200px;
+    height: 40px;
+    background-color: #fff;
+    text-align: left;
+  }
+  
